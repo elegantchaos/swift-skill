@@ -1,9 +1,9 @@
 ---
-name: swift-guidance
+name: swift
 description: Applies general Swift language guidance outside specialist SwiftUI, SwiftData, Swift Testing, and Swift concurrency skills. Use when reading, writing, or reviewing Swift code that needs baseline Swift language, organization, error-handling, state-modeling, or localization guidance.
 ---
 
-# Swift Guidance
+# Swift
 
 Use this skill for baseline Swift language guidance that sits below framework-specific specialist skills.
 It covers Swift toolchain expectations, file organization, core language conventions, error handling, state modeling, and localization.
@@ -16,6 +16,7 @@ Load only the references that matter for the task:
 4. Read `references/errors-and-state.md` for error handling and domain modeling guidance.
 5. Read `references/localization.md` for user-facing strings and localization guidance.
 6. If concurrency, SwiftUI, SwiftData, or Swift Testing concerns are central to the task, treat the corresponding specialist skill as the source of truth and use this skill only for residual baseline Swift questions.
+7. If source selection, policy guidance, or general engineering tradeoffs are central to the task, pair this skill with `coding-standards`.
 
 ## References
 
