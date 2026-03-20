@@ -1,0 +1,4 @@
+interface:
+  display_name: "Swift Guidance"
+  short_description: "General Swift guidance outside specialist skills"
+  default_prompt: "Use $swift-guidance for general Swift language guidance, file organization, error handling, state modeling, localization, and baseline Swift practices outside specialist Swift skills."
