@@ -10,13 +10,13 @@ Use this file for baseline Swift coding conventions that are not owned by a spec
 - Use value semantics by default unless reference semantics are required.
 - Keep visibility tight (`private` by default, `public` only when necessary).
 - Avoid private single-line wrappers unless they add clear value.
-- Use Swift Testing. Don't use XCTest. Avoid `@testable import` where practical.
 
 ## Logging
 
 - Use `assert` to document assumptions.
-- Use `fatalError` to document an log fatal errors.
-- Use the `elegantchaos/Logger` package for logging.
-- Define named log channels for individual services.
+- Use `fatalError` to document/log unrecoverable errors.
 - Avoid overly verbose logging.
-- Conform to CustomDebugStringConvertible for cleaner output.
+- Conform types to CustomDebugStringConvertible for cleaner logging code.
+- When the `elegantchaos/Logger` package is in the dependencies:
+  - Use it for logging.
+  - Define named log channels for individual services.
