@@ -1,6 +1,6 @@
 ---
 name: swift
-description: Applies general Swift language guidance outside specialist SwiftUI, SwiftData, Swift Testing, and Swift concurrency skills. Use when reading, writing, or reviewing Swift code that needs baseline Swift language, organization, error-handling, state-modeling, or localization guidance.
+description: Applies general Swift language guidance outside specialist SwiftUI, SwiftData, Swift Testing, and Swift concurrency skills. Use when reading, writing, or reviewing Swift code.
 ---
 
 # Swift
