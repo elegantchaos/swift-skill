@@ -57,3 +57,18 @@ When the `elegantchaos/Logger` package is in the dependencies:
 - The name can contain multiple words separated by spaces if appropriate.
 - Do not use the `alwaysEnabled:` flag.
 - Define named log channels for individual services.
+
+## Header Comments
+
+Add our standard header comment at the top of all Swift files:
+
+```swift
+// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+//  Created by Sam Deane on 28/01/2026.
+//  Copyright © 2026 Elegant Chaos Limited. All rights reserved.
+// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+```
+
+Update the dates accordingly. Keep the author as `Sam Deane`, and the copyright
+as `Elegant Chaos Limited`. Do not insert the agent name or other names.
