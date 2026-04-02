@@ -10,9 +10,6 @@ Use this file when deciding which Swift language and platform conventions should
 
 ## Legacy Projects
 
-- Follow the project's current Swift and platform targets.
-- Implement changes in a migration-friendly style.
-
 If an existing project or target is using Swift 5 language mode:
 
 - Migrate to Swift 6 if trivial, otherwise suggest a migration path.
@@ -20,3 +17,16 @@ If an existing project or target is using Swift 5 language mode:
 - Prefer modern concurrency-safe patterns where practical.
 - Consider splitting code into multiple packages to ease migration.
 - Default UI-facing types to `@MainActor` when it improves correctness; explicitly justify non-main-actor types.
+- Implement changes in a migration-friendly style.
+
+## Xcode MCP
+
+For Xcode projects, if the Xcode MCP is configured, prefer its tools over generic alternatives:
+
+    DocumentationSearch — verify API availability and correct usage before writing code
+    BuildProject — build the project after making changes to confirm compilation succeeds
+    GetBuildLog — inspect build errors and warnings
+    RenderPreview — visually verify SwiftUI views using Xcode Previews
+    XcodeListNavigatorIssues — check for issues visible in the Xcode Issue Navigator
+    ExecuteSnippet — test a code snippet in the context of a source file
+    XcodeRead, XcodeWrite, XcodeUpdate — prefer these over generic file tools when working with Xcode project files
