@@ -39,7 +39,21 @@ For protocols, prefer:
 
 ## Documentation comments
 
-- Add `///` documentation comments to all types and members, including private members.
-- If necessary, a blank line above a `///` comment to separate it from the previous definition.
-- Explain intent/behavior, not just the symbol name.
+- Add `///` documentation comments to all declarations (types/members/cases etc), including private ones.
+- Don't insert a blank line between the `///` comment and the declaration it is attached to.
+- Do insert a blank line between doc+declaration blocks, to visually separate them.
+- Explain intent, behavior and intended usage in doc comments, not just the symbol name.
+- Document individual parameters or return values if they are not obvious.
 - Add inline comments only where intent is not obvious.
+- For types that are key to the library or app, add a more comprehensive doc comment.
+- Comprehensive comments should explain the purpose and design of the type, and how it interacts with other key types.
+
+## Log Channels
+
+When the `elegantchaos/Logger` package is in the dependencies:
+
+- Define individual log channels for key services or subsystems.
+- Name the channel using natural language: `public let commandChannel = Channel("Commands")`
+- The name can contain multiple words separated by spaces if appropriate.
+- Do not use the `alwaysEnabled:` flag.
+- Define named log channels for individual services.
