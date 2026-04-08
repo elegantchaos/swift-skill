@@ -9,7 +9,7 @@ Use this file for baseline Swift coding conventions that are not owned by a spec
 - Avoid force unwraps and `try!` except in genuinely unrecoverable paths.
 - Use value semantics by default unless reference semantics are required.
 - Keep visibility tight (`private` by default, `public` only when necessary).
-- Avoid private single-line wrappers unless they add clear value.
+- Avoid private single-line wrappers unless they add clear value, or provide a target for a closure-style parameter (`perform:`, `action:`, etc)
 
 ## Observation
 
